@@ -1,0 +1,23 @@
+.people {
+  width: 80vw;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.people-list {
+  flex-basis: 50%;
+  width: 40%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-right: 1px solid #aaa;
+  padding: 0 1rem;
+}
+.person-details {
+  flex-basis: 50%;
+  width: 40%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0 1rem;
+}
