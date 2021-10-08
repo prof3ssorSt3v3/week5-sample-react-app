@@ -31,8 +31,8 @@ export default function Planets(props) {
 
   return (
     <div className="planets">
+      {list.length === 0 && <p>Loading...</p>}
       <div className="planet-list">
-        {list.length === 0 && <p>There are no planets yet</p>}
         {list.map((item, index) => (
           <p key={item.name}>
             <NavLink to={`/planets/${index + 1}`}>{item.name}</NavLink>

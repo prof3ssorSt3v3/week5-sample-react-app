@@ -26,12 +26,10 @@ export default function People(props) {
       {list.length === 0 && <p>Loading...</p>}
       <div className="people-list">
         {list.map((item, index) => (
-          <div className="person" key={item.name}>
-            <p>
-              {item.name} <br />
-              <NavLink to={`/people/${index + 1}`}>Learn More</NavLink>
-            </p>
-          </div>
+          <p className="person" key={item.name}>
+            {item.name} <br />
+            <NavLink to={`/people/${index + 1}`}>Learn More</NavLink>
+          </p>
         ))}
       </div>
 
