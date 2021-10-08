@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import PropTypes from 'prop-types';
 export default function Person({ findPerson }) {
   const [person, setPerson] = useState(null);
   let { id } = useParams();
@@ -18,3 +18,7 @@ export default function Person({ findPerson }) {
     </div>
   );
 }
+
+Person.propTypes = {
+  findPerson: PropTypes.func.isRequired,
+};

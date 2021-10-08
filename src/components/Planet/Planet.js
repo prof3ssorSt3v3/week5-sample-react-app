@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-//import { useLocation, useHistory } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Planet({ findPlanet }) {
   // console.log(props.match.params.id);
@@ -22,3 +22,7 @@ export default function Planet({ findPlanet }) {
     </>
   );
 }
+
+Planet.propTypes = {
+  findPlanet: PropTypes.func.isRequired,
+};
